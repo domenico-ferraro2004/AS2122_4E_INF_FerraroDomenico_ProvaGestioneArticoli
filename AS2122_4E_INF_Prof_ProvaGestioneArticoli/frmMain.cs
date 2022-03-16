@@ -34,7 +34,10 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 // aggiungi l'articolo all'elenco di articoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
-                articoli.descr
+                Articolo a = new Articolo();
+                articoli.Add();
+                Articolo a = new Articolo();
+                articoli.Add(a);
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
         }
