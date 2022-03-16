@@ -40,6 +40,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
         }
+        
 
         private void btnVisualizza_Click(object sender, EventArgs e)
         {
@@ -48,7 +49,11 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             {
                 case "Visualizza articoli":
                     // TODO: (2) aggiungere visualizzazione articoli inseriti nella listbox
-                    // ... lstElenco.Items.Add(a.Visualizzati()); 
+                    foreach(Articolo a in articoli)
+                    {
+                        lstElenco.Items.Add(a.Visualizzati()); 
+                    }
+
                     break;
             }
         }
