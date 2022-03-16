@@ -20,7 +20,8 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (4) creazione lista articoli
             // ...
-            List<Articolo> articoli = new Articolo();
+            List<Articolo> articoli = new List<Articolo>();
+
         }
 
         private void btnAggiungiArticolo_Click(object sender, EventArgs e)
@@ -35,9 +36,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
                 Articolo a = new Articolo();
-                articoli.Add();
-                Articolo a = new Articolo();
-                articoli.Add(a);
+                articoli.add(a);
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
         }
@@ -62,7 +61,11 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             int index = lstElenco.FindString(curItem);
 
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
-            // ... lblDescrizione.Text = articoli[index].Descrizione;
+            lblDescrizione.Text = articoli[index].Descrizione;
+            lblArticoliInseriti.Text = articoli[index].ArticoliInseriti;
+            lblPrezzo.Text = articoli[index].Prezzo;
+            lblUnitaMisura.Text = articoli[index].UnitaMisura;
+
         }
     }
 }
