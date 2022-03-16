@@ -16,7 +16,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (5) aggiungere attributi privati dei dati inseriti nella frmArticoli
         // ...
-
+        
 
         public DialogResult Status { get { return status; } }
 
@@ -31,7 +31,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
         {
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
-
+            
             status = DialogResult.OK;
             Close();
         }
