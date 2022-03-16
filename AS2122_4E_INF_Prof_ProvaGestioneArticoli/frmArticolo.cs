@@ -16,15 +16,31 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (5) aggiungere attributi privati dei dati inseriti nella frmArticoli
         // ...
-        private string Descrizione { get; private set; }
-        private string UnitaMisura { get; private set; }
-        private double Prezzo { get; private set; } 
+        private string descrizione;
+        private string unitaMisura;
+        private double prezzo;
         
 
         public DialogResult Status { get { return status; } }
 
         // TODO: (6) aggiungere property di sola lettura dei dati inseriti nella frmArticoli per l'utilizzo in frmMain
         // ...
+        
+        public string Descrizione
+        {
+            get { return descrizione; }
+        }
+
+        public string UnitaMisura
+        {
+            get { return unitaMisura; }
+        }
+
+        public double Prezzo
+        {
+            get { return prezzo; }
+        }
+           
         public frmArticolo()
         {
             InitializeComponent();
@@ -36,9 +52,9 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // ... descrizione, unitaMisura, prezzo
             if (txtPrezzo.text != "" && txtDescrizione.text != "" & cmbUnitaMisura.text != "")
             {
-                Descrizione = txtDescrizione.text;
-                UnitaMisura = cmbUnitaMisura;
-                Prezzo = txtPrezzo;
+                descrizione = txtDescrizione.text;
+                unitaMisura = cmbUnitaMisura;
+                prezzo = txtPrezzo;
             }
             else
             {
