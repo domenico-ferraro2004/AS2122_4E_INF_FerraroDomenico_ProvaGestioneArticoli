@@ -10,10 +10,10 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
     {
         // TODO: (8) aggiungere attributi privati di Articolo
         // ...
-        public int Codice { get; private set; }
-        public string Descrizione{ get; private set; }
-        public string UnitaMisura { get; private set; }
-        public double Prezzo { get; private set; }
+        public int Codice { public get; private set; }
+        public string Descrizione{ public get; private set; }
+        public string UnitaMisura { public get; private set; }
+        public double Prezzo { public get; private set; }
 
 
         // TODO: (9) aggiungere property di sola lettura dei dati necessari all'esterno di Articolo
